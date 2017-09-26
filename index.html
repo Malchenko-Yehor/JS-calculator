@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS-calculator</title>
+
+  	<!--build:css css/styles.min.css-->
+      <link rel="stylesheet" href="css/main.css">
+    <!--endbuild-->
+</head>
+<body>
+  <div class="calculator">
+    <div class="calculator__error">Error: <span></span></div>
+    <!-- CALCULATOR FORM -->
+    <form class="calculator__form" onsubmit="return false;">
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <input class="calculator__display" type="text"/>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+          <button type="button" value="(" class="calculator__key calculator__key--wider
+           calculator__button">(</button>
+          <button type="button" value=")" class="calculator__key calculator__key--wider
+           calculator__button">)</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="c" class="calculator__key calculator__clean">C</button>
+            <button type="button" value="&#8592" class="calculator__key calculator__backspace">&#8592</button>
+            <button type="button" value="%" class="calculator__key calculator__button calculator__percent">%</button>
+            <button type="button" value="/" class="calculator__key  calculator__button calculator__divide">/</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="7" class="calculator__key calculator__button">7</button>
+            <button type="button" value="8" class="calculator__key calculator__button">8</button>
+            <button type="button" value="9" class="calculator__key calculator__button">9</button>
+            <button type="button" value="*" class="calculator__key
+            calculator__button calculator__multiply">*</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="4" class="calculator__key calculator__button">4</button>
+            <button type="button" value="5" class="calculator__key calculator__button">5</button>
+            <button type="button" value="6" class="calculator__key calculator__button">6</button>
+            <button type="button" value="-" class="calculator__key
+            calculator__button calculator__minus">-</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="1" class="calculator__key calculator__button">1</button>
+            <button type="button" value="2" class="calculator__key calculator__button">2</button>
+            <button type="button" value="3" class="calculator__key calculator__button">3</button>
+            <button type="button" value="+" class="calculator__key
+            calculator__button calculator__plus">+</button>
+        </div>
+        <!-- CALCULATOR ROW -->
+        <div class="calculator__row">
+            <button type="button" value="." class="calculator__key calculator__button calculator__dot">.</button>
+            <button type="button" value="0" class="calculator__key calculator__button">0</button>
+            <button type="button" value="=" class="calculator__key calculator__key--wider calculator__equal">=</button>
+        </div>
+    </form>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--build:js js/main.min.js -->
+  <script src="js/jquery-animate-shadow-plugin.js"></script>
+  <script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
